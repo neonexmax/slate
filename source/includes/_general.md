@@ -36,7 +36,7 @@
       - Futures Order Cancel All
 
 ## Endpoint Security Type
-- Auth Key, API Key are passed into the Rest API via the ```Authorization``` , ```x-api-key``` header.
+- API Key / Auth Key are passed into the Rest API via the ```x-api-key``` /` ``Authorization```  header.
 
 ## Limit of requests
 - All APIs we provide are limited to 8 times per second and 200 times per minute to ensure

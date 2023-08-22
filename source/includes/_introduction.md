@@ -1,8 +1,7 @@
 # Introduction
 
 ## API Key Setup
-- Some endpoints will require an API Key.
-- For security on the generated API Key, it is recommended to set IP restrictions on the key.
+- All endpoints will require an API Key/secret Key.
 - Never share your API Key/secret Key.
 
 <aside class="warning">
