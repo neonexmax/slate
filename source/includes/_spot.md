@@ -339,13 +339,13 @@ Get user assets or positive assets data.
 
 ### Parameter:
 
-| Name       | Type   | Required                                                       | Description                                          |
-|------------|--------|----------------------------------------------------------------|------------------------------------------------------|
-| symbol     | String | Yes                                                            |                                                      |
-| startTime  | int    | No                                                             |                                                      |
-| endTime    | int    | No                                                             |                                                      |
-| status     |        | Yes                                                            | TRADING(미체결),<br> COMPLETED(체결완료),<br> CANCELED (취소) |
-| size       |        | No (If startTime and endTime <br> is not set, it is mandatory) |                                                      |
+| Name       | Type   | Required                                                   | Description                                          |
+|------------|--------|------------------------------------------------------------|------------------------------------------------------|
+| symbol     | String | Yes                                                        |                                                      |
+| startTime  | int    | No                                                         |                                                      |
+| endTime    | int    | No                                                         |                                                      |
+| status     | String | Yes                                                        | TRADING(미체결),<br> COMPLETED(체결완료),<br> CANCELED (취소) |
+| size       | int    | No (If startTime and endTime  is not set, it is mandatory) |                                                      |
 
 
 ## Spot Trade History
@@ -408,13 +408,13 @@ Get user assets or positive assets data.
 
 ### Parameter:
 
-| Name       | Type   | Required                                                       | Description   |
-|------------|--------|----------------------------------------------------------------|---------------|
-| symbol     | String | Yes                                                            |               |
-| startTime  | int    | No                                                             |               |
-| endTime    | int    | No                                                             |               |
-| direction  |        | Yes                                                            | BUY,<br> SELL |
-| size       |        | No (If startTime and endTime <br> is not set, it is mandatory) |               |
+| Name       | Type   | Required                                                    | Description   |
+|------------|--------|-------------------------------------------------------------|---------------|
+| symbol     | String | Yes                                                         |               |
+| startTime  | int    | No                                                          |               |
+| endTime    | int    | No                                                          |               |
+| direction  | String | Yes                                                         | BUY,<br> SELL |
+| size       | int    | No (If startTime and endTime is not set, it is mandatory)   |               |
 
 
 ## Spot Order
@@ -602,6 +602,6 @@ Get chart history data
 | Name       | Type    | Required | Description                                                                                               |
 |------------|---------|----------|-----------------------------------------------------------------------------------------------------------|
 | symbol     | String  | Yes      |                                                                                                           |
-| from       | String  | Yes      | ex) 1686516139000                                                                                         |
-| to         | String  | Yes      | ex) 1686535279316                                                                                         |
+| from       | String  | Yes      | unix timestamp                                                                                            |
+| to         | String  | Yes      | unix timestamp                                                                                            |
 | resolution | String  | Yes      | 1 (1 minute)<br/> 30 (30 minute)<br/> 60 (1 hour)<br/> 1D (1 day)<br/> 1W (1 week)<br/> 1M (1 month)<br/> |

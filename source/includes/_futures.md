@@ -275,7 +275,7 @@
 
 | Name   | Type   | Required | Description                                           |
 |--------|--------|----------|-------------------------------------------------------|
-| ticker | String | Yes      | If blank, then query all <br> position that user have |
+| ticker | String | Yes      | If blank, then query all position that user have |
 
 
 ## Futures Position Close All
