@@ -11,6 +11,7 @@
         <meta
             content="Bitmusa API Documentation"
         >
+    <link href="images/logo-34b99611.svg" rel="icon" type="image/ico">
     <title>Bitmusa API Documentation</title>
 
     <style media="screen">
@@ -941,14 +942,14 @@ smooth service.</li>
 </tr>
 <tr>
 <td>status</td>
-<td></td>
+<td>String</td>
 <td>Yes</td>
 <td>TRADING(미체결),<br> COMPLETED(체결완료),<br> CANCELED (취소)</td>
 </tr>
 <tr>
 <td>size</td>
-<td></td>
-<td>No (If startTime and endTime <br> is not set, it is mandatory)</td>
+<td>int</td>
+<td>No (If startTime and endTime  is not set, it is mandatory)</td>
 <td></td>
 </tr>
 </tbody></table>
@@ -1050,14 +1051,14 @@ smooth service.</li>
 </tr>
 <tr>
 <td>direction</td>
-<td></td>
+<td>String</td>
 <td>Yes</td>
 <td>BUY,<br> SELL</td>
 </tr>
 <tr>
 <td>size</td>
-<td></td>
-<td>No (If startTime and endTime <br> is not set, it is mandatory)</td>
+<td>int</td>
+<td>No (If startTime and endTime is not set, it is mandatory)</td>
 <td></td>
 </tr>
 </tbody></table>
@@ -1376,13 +1377,13 @@ smooth service.</li>
 <td>from</td>
 <td>String</td>
 <td>Yes</td>
-<td>ex) 1686516139000</td>
+<td>unix timestamp</td>
 </tr>
 <tr>
 <td>to</td>
 <td>String</td>
 <td>Yes</td>
-<td>ex) 1686535279316</td>
+<td>unix timestamp</td>
 </tr>
 <tr>
 <td>resolution</td>
@@ -1767,7 +1768,7 @@ smooth service.</li>
 <td>ticker</td>
 <td>String</td>
 <td>Yes</td>
-<td>If blank, then query all <br> position that user have</td>
+<td>If blank, then query all position that user have</td>
 </tr>
 </tbody></table>
 <h2 id='futures-position-close-all'>Futures Position Close All</h2>
