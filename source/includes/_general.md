@@ -6,7 +6,6 @@
 - Root Endpoint
   - ```/api/v1```
 - All endpoints return either a JSON object or array.
-- Data is returned in descending order. The largest or newest comes first, the smallest or oldest last.
 - Users can use the Open API provided by BitMusa to develop the following functions for
   trading.
 
