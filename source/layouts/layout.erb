@@ -38,7 +38,7 @@ under the License.
         >
       <% end %>
     <% end %>
-    <link href="images/logo.svg" rel="icon" type="image/ico">
+    <link href="images/favicon.ico" rel="icon" type="image/ico">
     <title><%= current_page.data.title || "API Documentation" %></title>
 
     <style media="screen">
@@ -73,7 +73,9 @@ under the License.
       </span>
     </a>
     <div class="toc-wrapper">
+      <a href="https://bitmusa.com/"/>
       <%= image_tag "logo.svg", class: 'logo' %>
+      </a>
       <% if language_tabs.any? %>
         <div class="lang-selector">
           <% language_tabs.each do |lang| %>
